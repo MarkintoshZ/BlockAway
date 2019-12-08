@@ -7,7 +7,7 @@ export class WelcomePage extends Component {
 
     renderOptions() {
         const { infoFilled } = this.props;
-        return (infoFilled?
+        return (!infoFilled?
           // nav to add info page
           <Link to='/add-info'>
             <button

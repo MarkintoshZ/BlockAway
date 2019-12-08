@@ -10,11 +10,12 @@ body{color:rgb(49, 49, 49);text-align:center;}
 .btn-lg{font-size:0.875rem;padding:0.6875rem 3.4375rem;line-height:1.75rem;}
 .btn:focus,.btn:active:focus,.btn.active:focus{outline:none;}
 .btn-primary{background-color:rgb(0, 145, 241);border:1px solid rgb(0, 145, 241);}
+.btn-primary:disabled, .btn-primary[disabled]{background-color: rgb(184, 184, 184);border:1px solid}
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active{color:#fff;border:1px solid #270F34;background-color:#270F34;}
 .navbar{background-color:rgb(85, 85, 85) !important;-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;}
 
 /* AppButton */
-.app-btn{font-family:'Source Code Pro',monospace;padding:0.5625rem 2.5rem;font-size:0.8125rem;font-weight:400;line-height:1.75rem;border-radius:20px!important;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.app-btn{font-family:'Source Code Pro',monospace;padding:0.5625rem 2.5rem;font: size 1.5rem;font-weight:400;line-height:1.75rem;border-radius:20px!important;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
 .app-btn:focus,.btn:active:focus,.btn.active:focus{outline:none;}
 .app-btn:hover,.btn-primary:focus,.btn-primary:active{color:#fff;border:1px solid #270F34;background-color:#270F34;}
 
