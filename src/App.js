@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Profile from './Profile.js';
-import Signin from './Signin.js';
+import MainPage from './components/MainPage';
+import Signin from './components/Signin.js';
 import {
   UserSession,
   AppConfig
 } from 'blockstack';
 
-const appConfig = new AppConfig()
-const userSession = new UserSession({ appConfig: appConfig })
+const appConfig = new AppConfig(['store_write', 'publish_data']);
+const userSession = new UserSession({ appConfig: appConfig });
 
 export default class App extends Component {
 
@@ -28,7 +28,7 @@ export default class App extends Component {
         <div className="site-wrapper-inner">
           { !userSession.isUserSignedIn() ?
             <Signin userSession={userSession} handleSignIn={ this.handleSignIn } />
-            : <Profile userSession={userSession} handleSignOut={ this.handleSignOut } />
+            : <MainPage userSession={userSession} handleSignOut={ this.handleSignOut } />
           }
         </div>
       </div>
